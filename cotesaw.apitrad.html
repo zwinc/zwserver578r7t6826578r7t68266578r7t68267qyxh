@@ -1,0 +1,14 @@
+<script>var iotd = new Date();
+function tttxxx() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "smre.txt", true);
+  xhttp.send();
+}
+</script>
+<textarea rows="25" colums="26">Type your text here...</textarea>
+<button onclick="tttxxx" >submit</button>
